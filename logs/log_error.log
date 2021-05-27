@@ -1,0 +1,15 @@
+2021-05-27 16:14:36.134 [main] ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 2 of constructor in com.antelope.demo3.service.TestServiceImpl required a bean of type 'com.antelope.demo3.redis.RedisHelper' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.antelope.demo3.redis.RedisHelper' in your configuration.
+

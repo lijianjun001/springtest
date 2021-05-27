@@ -1,0 +1,285 @@
+2021-05-27 15:18:53.047 [main] INFO  com.antelope.demo3.Demo3Application - Starting Demo3Application using Java 1.8.0_161 on bogon with PID 2323 (/Users/mac/j2se/demo3/target/classes started by mac in /Users/mac/j2se/demo3)
+2021-05-27 15:18:53.051 [main] INFO  com.antelope.demo3.Demo3Application - No active profile set, falling back to default profiles: default
+2021-05-27 15:18:53.756 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-05-27 15:18:53.757 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2021-05-27 15:18:53.806 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 46 ms. Found 1 MongoDB repository interfaces.
+2021-05-27 15:18:53.818 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-05-27 15:18:53.819 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-05-27 15:18:53.830 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.antelope.demo3.mongo.AgreementRep. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2021-05-27 15:18:53.830 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
+2021-05-27 15:18:54.261 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8082 (http)
+2021-05-27 15:18:54.268 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2021-05-27 15:18:54.269 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-05-27 15:18:54.269 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-05-27 15:18:54.321 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-05-27 15:18:54.321 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1180 ms
+2021-05-27 15:18:54.651 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[192.168.31.189:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2021-05-27 15:18:54.693 [cluster-ClusterId{value='60af47dee1e0ef054b2ade17', description='null'}-192.168.31.189:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:11263}] to 192.168.31.189:27017
+2021-05-27 15:18:54.693 [cluster-rtt-ClusterId{value='60af47dee1e0ef054b2ade17', description='null'}-192.168.31.189:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:11262}] to 192.168.31.189:27017
+2021-05-27 15:18:54.694 [cluster-ClusterId{value='60af47dee1e0ef054b2ade17', description='null'}-192.168.31.189:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=192.168.31.189:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=14444541}
+2021-05-27 15:18:55.352 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2021-05-27 15:18:55.374 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8082 (http) with context path ''
+2021-05-27 15:18:55.382 [main] INFO  com.antelope.demo3.Demo3Application - Started Demo3Application in 2.817 seconds (JVM running for 3.347)
+2021-05-27 15:18:55.383 [main] INFO  o.s.boot.availability.ApplicationAvailabilityBean - Application availability state LivenessState changed to CORRECT
+2021-05-27 15:18:55.384 [main] INFO  o.s.boot.availability.ApplicationAvailabilityBean - Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2021-05-27 15:19:07.826 [http-nio-8082-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-27 15:19:07.826 [http-nio-8082-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-05-27 15:19:07.827 [http-nio-8082-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2021-05-27 15:19:07.857 [http-nio-8082-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-05-27 15:19:07.970 [http-nio-8082-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-05-27 15:23:59.387 [main] INFO  com.antelope.demo3.Demo3Application - Starting Demo3Application using Java 1.8.0_161 on bogon with PID 2347 (/Users/mac/j2se/demo3/target/classes started by mac in /Users/mac/j2se/demo3)
+2021-05-27 15:23:59.389 [main] INFO  com.antelope.demo3.Demo3Application - No active profile set, falling back to default profiles: default
+2021-05-27 15:24:00.083 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-05-27 15:24:00.085 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2021-05-27 15:24:00.141 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 51 ms. Found 1 MongoDB repository interfaces.
+2021-05-27 15:24:00.154 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-05-27 15:24:00.155 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-05-27 15:24:00.167 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.antelope.demo3.mongo.AgreementRep. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2021-05-27 15:24:00.167 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+2021-05-27 15:24:00.589 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8082 (http)
+2021-05-27 15:24:00.597 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2021-05-27 15:24:00.598 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-05-27 15:24:00.598 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-05-27 15:24:00.654 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-05-27 15:24:00.655 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1176 ms
+2021-05-27 15:24:01.055 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[192.168.31.189:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2021-05-27 15:24:01.095 [cluster-ClusterId{value='60af4911ded9f405000fca34', description='null'}-192.168.31.189:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:11265}] to 192.168.31.189:27017
+2021-05-27 15:24:01.095 [cluster-rtt-ClusterId{value='60af4911ded9f405000fca34', description='null'}-192.168.31.189:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:11266}] to 192.168.31.189:27017
+2021-05-27 15:24:01.095 [cluster-ClusterId{value='60af4911ded9f405000fca34', description='null'}-192.168.31.189:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=192.168.31.189:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=13915434}
+2021-05-27 15:24:01.752 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2021-05-27 15:24:01.775 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8082 (http) with context path ''
+2021-05-27 15:24:01.784 [main] INFO  com.antelope.demo3.Demo3Application - Started Demo3Application in 2.838 seconds (JVM running for 3.402)
+2021-05-27 15:24:01.785 [main] INFO  o.s.boot.availability.ApplicationAvailabilityBean - Application availability state LivenessState changed to CORRECT
+2021-05-27 15:24:01.787 [main] INFO  o.s.boot.availability.ApplicationAvailabilityBean - Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2021-05-27 15:24:20.047 [http-nio-8082-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-27 15:24:20.047 [http-nio-8082-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-05-27 15:24:20.048 [http-nio-8082-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2021-05-27 15:24:20.076 [http-nio-8082-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-05-27 15:24:20.186 [http-nio-8082-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-05-27 15:24:35.533 [SpringContextShutdownHook] INFO  o.s.boot.availability.ApplicationAvailabilityBean - Application availability state ReadinessState changed from ACCEPTING_TRAFFIC to REFUSING_TRAFFIC
+2021-05-27 15:24:37.923 [main] INFO  com.antelope.demo3.Demo3Application - Starting Demo3Application using Java 1.8.0_161 on bogon with PID 2356 (/Users/mac/j2se/demo3/target/classes started by mac in /Users/mac/j2se/demo3)
+2021-05-27 15:24:37.926 [main] INFO  com.antelope.demo3.Demo3Application - No active profile set, falling back to default profiles: default
+2021-05-27 15:24:38.581 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-05-27 15:24:38.582 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2021-05-27 15:24:38.634 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 48 ms. Found 1 MongoDB repository interfaces.
+2021-05-27 15:24:38.646 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-05-27 15:24:38.647 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-05-27 15:24:38.658 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.antelope.demo3.mongo.AgreementRep. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2021-05-27 15:24:38.658 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+2021-05-27 15:24:39.058 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8082 (http)
+2021-05-27 15:24:39.065 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2021-05-27 15:24:39.065 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-05-27 15:24:39.065 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-05-27 15:24:39.116 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-05-27 15:24:39.117 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1126 ms
+2021-05-27 15:24:39.448 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[192.168.31.189:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2021-05-27 15:24:39.486 [cluster-ClusterId{value='60af4937749be82f81b5babf', description='null'}-192.168.31.189:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:11267}] to 192.168.31.189:27017
+2021-05-27 15:24:39.486 [cluster-rtt-ClusterId{value='60af4937749be82f81b5babf', description='null'}-192.168.31.189:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:11268}] to 192.168.31.189:27017
+2021-05-27 15:24:39.487 [cluster-ClusterId{value='60af4937749be82f81b5babf', description='null'}-192.168.31.189:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=192.168.31.189:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=14490559}
+2021-05-27 15:24:40.138 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2021-05-27 15:24:40.160 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8082 (http) with context path ''
+2021-05-27 15:24:40.169 [main] INFO  com.antelope.demo3.Demo3Application - Started Demo3Application in 2.692 seconds (JVM running for 3.201)
+2021-05-27 15:24:40.170 [main] INFO  o.s.boot.availability.ApplicationAvailabilityBean - Application availability state LivenessState changed to CORRECT
+2021-05-27 15:24:40.171 [main] INFO  o.s.boot.availability.ApplicationAvailabilityBean - Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2021-05-27 15:24:44.619 [http-nio-8082-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-27 15:24:44.619 [http-nio-8082-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-05-27 15:24:44.620 [http-nio-8082-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2021-05-27 15:24:44.647 [http-nio-8082-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-05-27 15:24:44.755 [http-nio-8082-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-05-27 15:26:26.788 [SpringContextShutdownHook] INFO  o.s.boot.availability.ApplicationAvailabilityBean - Application availability state ReadinessState changed from ACCEPTING_TRAFFIC to REFUSING_TRAFFIC
+2021-05-27 15:26:29.266 [main] INFO  com.antelope.demo3.Demo3Application - Starting Demo3Application using Java 1.8.0_161 on bogon with PID 2372 (/Users/mac/j2se/demo3/target/classes started by mac in /Users/mac/j2se/demo3)
+2021-05-27 15:26:29.268 [main] INFO  com.antelope.demo3.Demo3Application - No active profile set, falling back to default profiles: default
+2021-05-27 15:26:29.905 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-05-27 15:26:29.906 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2021-05-27 15:26:29.954 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 44 ms. Found 1 MongoDB repository interfaces.
+2021-05-27 15:26:29.966 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-05-27 15:26:29.968 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-05-27 15:26:29.979 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.antelope.demo3.mongo.AgreementRep. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2021-05-27 15:26:29.979 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
+2021-05-27 15:26:30.379 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8082 (http)
+2021-05-27 15:26:30.385 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2021-05-27 15:26:30.386 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-05-27 15:26:30.387 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-05-27 15:26:30.438 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-05-27 15:26:30.438 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1078 ms
+2021-05-27 15:26:30.787 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[192.168.31.189:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2021-05-27 15:26:30.825 [cluster-rtt-ClusterId{value='60af49a6ee998a66673a25dd', description='null'}-192.168.31.189:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:11270}] to 192.168.31.189:27017
+2021-05-27 15:26:30.825 [cluster-ClusterId{value='60af49a6ee998a66673a25dd', description='null'}-192.168.31.189:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:11269}] to 192.168.31.189:27017
+2021-05-27 15:26:30.825 [cluster-ClusterId{value='60af49a6ee998a66673a25dd', description='null'}-192.168.31.189:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=192.168.31.189:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=13971900}
+2021-05-27 15:26:31.482 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2021-05-27 15:26:31.504 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8082 (http) with context path ''
+2021-05-27 15:26:31.513 [main] INFO  com.antelope.demo3.Demo3Application - Started Demo3Application in 2.718 seconds (JVM running for 3.261)
+2021-05-27 15:26:31.514 [main] INFO  o.s.boot.availability.ApplicationAvailabilityBean - Application availability state LivenessState changed to CORRECT
+2021-05-27 15:26:31.515 [main] INFO  o.s.boot.availability.ApplicationAvailabilityBean - Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2021-05-27 15:26:37.353 [http-nio-8082-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-27 15:26:37.354 [http-nio-8082-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-05-27 15:26:37.355 [http-nio-8082-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2021-05-27 15:26:37.381 [http-nio-8082-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-05-27 15:26:37.489 [http-nio-8082-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-05-27 15:54:16.286 [http-nio-8082-exec-6] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:3, serverValue:11271}] to 192.168.31.189:27017
+2021-05-27 16:00:15.360 [SpringContextShutdownHook] INFO  o.s.boot.availability.ApplicationAvailabilityBean - Application availability state ReadinessState changed from ACCEPTING_TRAFFIC to REFUSING_TRAFFIC
+2021-05-27 16:00:19.677 [main] INFO  com.antelope.demo3.Demo3Application - Starting Demo3Application using Java 1.8.0_161 on bogon with PID 2488 (/Users/mac/j2se/demo3/target/classes started by mac in /Users/mac/j2se/demo3)
+2021-05-27 16:00:19.679 [main] INFO  com.antelope.demo3.Demo3Application - No active profile set, falling back to default profiles: default
+2021-05-27 16:00:20.288 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-05-27 16:00:20.289 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2021-05-27 16:00:20.340 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 47 ms. Found 1 MongoDB repository interfaces.
+2021-05-27 16:00:20.352 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-05-27 16:00:20.353 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-05-27 16:00:20.363 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.antelope.demo3.mongo.AgreementRep. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2021-05-27 16:00:20.364 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+2021-05-27 16:00:20.758 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8082 (http)
+2021-05-27 16:00:20.766 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2021-05-27 16:00:20.766 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-05-27 16:00:20.767 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-05-27 16:00:20.822 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-05-27 16:00:20.822 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1096 ms
+2021-05-27 16:00:21.173 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[192.168.31.189:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2021-05-27 16:00:21.213 [cluster-rtt-ClusterId{value='60af51953a940121ac3bf91c', description='null'}-192.168.31.189:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:11274}] to 192.168.31.189:27017
+2021-05-27 16:00:21.213 [cluster-ClusterId{value='60af51953a940121ac3bf91c', description='null'}-192.168.31.189:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:11273}] to 192.168.31.189:27017
+2021-05-27 16:00:21.213 [cluster-ClusterId{value='60af51953a940121ac3bf91c', description='null'}-192.168.31.189:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=192.168.31.189:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=15015882}
+2021-05-27 16:00:21.920 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2021-05-27 16:00:21.943 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8082 (http) with context path ''
+2021-05-27 16:00:21.952 [main] INFO  com.antelope.demo3.Demo3Application - Started Demo3Application in 2.73 seconds (JVM running for 3.494)
+2021-05-27 16:00:21.953 [main] INFO  o.s.boot.availability.ApplicationAvailabilityBean - Application availability state LivenessState changed to CORRECT
+2021-05-27 16:00:21.954 [main] INFO  o.s.boot.availability.ApplicationAvailabilityBean - Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2021-05-27 16:00:29.938 [http-nio-8082-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-27 16:00:29.938 [http-nio-8082-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-05-27 16:00:29.940 [http-nio-8082-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2021-05-27 16:00:29.986 [http-nio-8082-exec-1] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:3, serverValue:11275}] to 192.168.31.189:27017
+2021-05-27 16:01:21.697 [SpringContextShutdownHook] INFO  o.s.boot.availability.ApplicationAvailabilityBean - Application availability state ReadinessState changed from ACCEPTING_TRAFFIC to REFUSING_TRAFFIC
+2021-05-27 16:01:25.141 [main] INFO  com.antelope.demo3.Demo3Application - Starting Demo3Application using Java 1.8.0_161 on bogon with PID 2501 (/Users/mac/j2se/demo3/target/classes started by mac in /Users/mac/j2se/demo3)
+2021-05-27 16:01:25.144 [main] INFO  com.antelope.demo3.Demo3Application - No active profile set, falling back to default profiles: default
+2021-05-27 16:01:25.774 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-05-27 16:01:25.775 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2021-05-27 16:01:25.821 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 42 ms. Found 1 MongoDB repository interfaces.
+2021-05-27 16:01:25.839 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-05-27 16:01:25.840 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-05-27 16:01:25.851 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.antelope.demo3.mongo.AgreementRep. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2021-05-27 16:01:25.852 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
+2021-05-27 16:01:26.265 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8082 (http)
+2021-05-27 16:01:26.272 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2021-05-27 16:01:26.273 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-05-27 16:01:26.274 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-05-27 16:01:26.338 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-05-27 16:01:26.338 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1135 ms
+2021-05-27 16:01:26.686 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[192.168.31.189:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2021-05-27 16:01:26.725 [cluster-ClusterId{value='60af51d68101fb718593a3c4', description='null'}-192.168.31.189:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:11276}] to 192.168.31.189:27017
+2021-05-27 16:01:26.726 [cluster-ClusterId{value='60af51d68101fb718593a3c4', description='null'}-192.168.31.189:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=192.168.31.189:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=14314359}
+2021-05-27 16:01:26.726 [cluster-rtt-ClusterId{value='60af51d68101fb718593a3c4', description='null'}-192.168.31.189:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:11277}] to 192.168.31.189:27017
+2021-05-27 16:01:27.540 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2021-05-27 16:01:27.570 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8082 (http) with context path ''
+2021-05-27 16:01:27.582 [main] INFO  com.antelope.demo3.Demo3Application - Started Demo3Application in 2.869 seconds (JVM running for 3.406)
+2021-05-27 16:01:27.584 [main] INFO  o.s.boot.availability.ApplicationAvailabilityBean - Application availability state LivenessState changed to CORRECT
+2021-05-27 16:01:27.586 [main] INFO  o.s.boot.availability.ApplicationAvailabilityBean - Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2021-05-27 16:01:39.416 [http-nio-8082-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-27 16:01:39.416 [http-nio-8082-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-05-27 16:01:39.418 [http-nio-8082-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2021-05-27 16:01:39.445 [http-nio-8082-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-05-27 16:01:39.674 [http-nio-8082-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-05-27 16:03:39.617 [SpringContextShutdownHook] INFO  o.s.boot.availability.ApplicationAvailabilityBean - Application availability state ReadinessState changed from ACCEPTING_TRAFFIC to REFUSING_TRAFFIC
+2021-05-27 16:03:43.666 [main] INFO  com.antelope.demo3.Demo3Application - Starting Demo3Application using Java 1.8.0_161 on bogon with PID 2513 (/Users/mac/j2se/demo3/target/classes started by mac in /Users/mac/j2se/demo3)
+2021-05-27 16:03:43.669 [main] INFO  com.antelope.demo3.Demo3Application - No active profile set, falling back to default profiles: default
+2021-05-27 16:03:44.281 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-05-27 16:03:44.282 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2021-05-27 16:03:44.331 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 46 ms. Found 1 MongoDB repository interfaces.
+2021-05-27 16:03:44.342 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-05-27 16:03:44.343 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-05-27 16:03:44.354 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.antelope.demo3.mongo.AgreementRep. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2021-05-27 16:03:44.354 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+2021-05-27 16:03:44.736 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8082 (http)
+2021-05-27 16:03:44.744 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2021-05-27 16:03:44.744 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-05-27 16:03:44.745 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-05-27 16:03:44.805 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-05-27 16:03:44.806 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1086 ms
+2021-05-27 16:03:45.134 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[192.168.31.189:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2021-05-27 16:03:45.172 [cluster-rtt-ClusterId{value='60af5261f0ebad6bae5474ad', description='null'}-192.168.31.189:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:11279}] to 192.168.31.189:27017
+2021-05-27 16:03:45.172 [cluster-ClusterId{value='60af5261f0ebad6bae5474ad', description='null'}-192.168.31.189:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:11278}] to 192.168.31.189:27017
+2021-05-27 16:03:45.172 [cluster-ClusterId{value='60af5261f0ebad6bae5474ad', description='null'}-192.168.31.189:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=192.168.31.189:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=13766366}
+2021-05-27 16:03:45.804 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2021-05-27 16:03:45.826 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8082 (http) with context path ''
+2021-05-27 16:03:45.834 [main] INFO  com.antelope.demo3.Demo3Application - Started Demo3Application in 2.643 seconds (JVM running for 3.241)
+2021-05-27 16:03:45.835 [main] INFO  o.s.boot.availability.ApplicationAvailabilityBean - Application availability state LivenessState changed to CORRECT
+2021-05-27 16:03:45.836 [main] INFO  o.s.boot.availability.ApplicationAvailabilityBean - Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2021-05-27 16:03:53.098 [http-nio-8082-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-27 16:03:53.098 [http-nio-8082-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-05-27 16:03:53.100 [http-nio-8082-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2021-05-27 16:03:53.127 [http-nio-8082-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-05-27 16:03:53.235 [http-nio-8082-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-05-27 16:11:56.887 [SpringContextShutdownHook] INFO  o.s.boot.availability.ApplicationAvailabilityBean - Application availability state ReadinessState changed from ACCEPTING_TRAFFIC to REFUSING_TRAFFIC
+2021-05-27 16:12:00.854 [main] INFO  com.antelope.demo3.Demo3Application - Starting Demo3Application using Java 1.8.0_161 on bogon with PID 2570 (/Users/mac/j2se/demo3/target/classes started by mac in /Users/mac/j2se/demo3)
+2021-05-27 16:12:00.856 [main] INFO  com.antelope.demo3.Demo3Application - No active profile set, falling back to default profiles: default
+2021-05-27 16:12:01.589 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-05-27 16:12:01.590 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2021-05-27 16:12:01.645 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 51 ms. Found 1 MongoDB repository interfaces.
+2021-05-27 16:12:01.657 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-05-27 16:12:01.658 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-05-27 16:12:01.669 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.antelope.demo3.mongo.AgreementRep. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2021-05-27 16:12:01.669 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
+2021-05-27 16:12:02.077 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8082 (http)
+2021-05-27 16:12:02.085 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2021-05-27 16:12:02.086 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-05-27 16:12:02.086 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-05-27 16:12:02.168 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-05-27 16:12:02.168 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1245 ms
+2021-05-27 16:12:02.503 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[192.168.31.189:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2021-05-27 16:12:02.541 [cluster-ClusterId{value='60af54524184c86ac0ddd2fb', description='null'}-192.168.31.189:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:11281}] to 192.168.31.189:27017
+2021-05-27 16:12:02.541 [cluster-rtt-ClusterId{value='60af54524184c86ac0ddd2fb', description='null'}-192.168.31.189:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:11280}] to 192.168.31.189:27017
+2021-05-27 16:12:02.541 [cluster-ClusterId{value='60af54524184c86ac0ddd2fb', description='null'}-192.168.31.189:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=192.168.31.189:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=13936884}
+2021-05-27 16:12:03.184 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2021-05-27 16:12:03.206 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8082 (http) with context path ''
+2021-05-27 16:12:03.215 [main] INFO  com.antelope.demo3.Demo3Application - Started Demo3Application in 2.768 seconds (JVM running for 3.486)
+2021-05-27 16:12:03.216 [main] INFO  o.s.boot.availability.ApplicationAvailabilityBean - Application availability state LivenessState changed to CORRECT
+2021-05-27 16:12:03.217 [main] INFO  o.s.boot.availability.ApplicationAvailabilityBean - Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2021-05-27 16:12:09.346 [http-nio-8082-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-27 16:12:09.346 [http-nio-8082-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-05-27 16:12:09.348 [http-nio-8082-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2021-05-27 16:12:09.373 [http-nio-8082-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-05-27 16:12:09.482 [http-nio-8082-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-05-27 16:14:34.161 [main] INFO  com.antelope.demo3.Demo3Application - Starting Demo3Application using Java 1.8.0_161 on bogon with PID 2583 (/Users/mac/j2se/demo3/target/classes started by mac in /Users/mac/j2se/demo3)
+2021-05-27 16:14:34.163 [main] INFO  com.antelope.demo3.Demo3Application - No active profile set, falling back to default profiles: default
+2021-05-27 16:14:34.772 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-05-27 16:14:34.773 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2021-05-27 16:14:34.820 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 43 ms. Found 1 MongoDB repository interfaces.
+2021-05-27 16:14:34.834 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-05-27 16:14:34.835 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-05-27 16:14:34.846 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.antelope.demo3.mongo.AgreementRep. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2021-05-27 16:14:34.847 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
+2021-05-27 16:14:35.423 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8082 (http)
+2021-05-27 16:14:35.431 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2021-05-27 16:14:35.432 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-05-27 16:14:35.432 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-05-27 16:14:35.502 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-05-27 16:14:35.503 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1294 ms
+2021-05-27 16:14:35.865 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[192.168.31.189:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2021-05-27 16:14:35.908 [cluster-rtt-ClusterId{value='60af54eb517b5a63ed4ffbc9', description='null'}-192.168.31.189:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:11282}] to 192.168.31.189:27017
+2021-05-27 16:14:35.908 [cluster-ClusterId{value='60af54eb517b5a63ed4ffbc9', description='null'}-192.168.31.189:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:11283}] to 192.168.31.189:27017
+2021-05-27 16:14:35.908 [cluster-ClusterId{value='60af54eb517b5a63ed4ffbc9', description='null'}-192.168.31.189:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=192.168.31.189:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=14340788}
+2021-05-27 16:14:36.109 [main] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2021-05-27 16:14:36.119 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-05-27 16:15:02.195 [main] INFO  com.antelope.demo3.Demo3Application - Starting Demo3Application using Java 1.8.0_161 on bogon with PID 2587 (/Users/mac/j2se/demo3/target/classes started by mac in /Users/mac/j2se/demo3)
+2021-05-27 16:15:02.199 [main] INFO  com.antelope.demo3.Demo3Application - No active profile set, falling back to default profiles: default
+2021-05-27 16:15:02.843 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-05-27 16:15:02.844 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2021-05-27 16:15:02.901 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 54 ms. Found 1 MongoDB repository interfaces.
+2021-05-27 16:15:02.914 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-05-27 16:15:02.915 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-05-27 16:15:02.927 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.antelope.demo3.mongo.AgreementRep. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2021-05-27 16:15:02.927 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
+2021-05-27 16:15:03.320 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8082 (http)
+2021-05-27 16:15:03.327 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2021-05-27 16:15:03.327 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-05-27 16:15:03.328 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-05-27 16:15:03.379 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-05-27 16:15:03.379 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1128 ms
+2021-05-27 16:15:03.713 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[192.168.31.189:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2021-05-27 16:15:03.751 [cluster-ClusterId{value='60af55072a16d6043e46ef9b', description='null'}-192.168.31.189:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:11284}] to 192.168.31.189:27017
+2021-05-27 16:15:03.751 [cluster-rtt-ClusterId{value='60af55072a16d6043e46ef9b', description='null'}-192.168.31.189:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:11285}] to 192.168.31.189:27017
+2021-05-27 16:15:03.751 [cluster-ClusterId{value='60af55072a16d6043e46ef9b', description='null'}-192.168.31.189:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=192.168.31.189:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=13986426}
+2021-05-27 16:15:04.407 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2021-05-27 16:15:04.432 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8082 (http) with context path ''
+2021-05-27 16:15:04.442 [main] INFO  com.antelope.demo3.Demo3Application - Started Demo3Application in 2.659 seconds (JVM running for 3.152)
+2021-05-27 16:15:04.443 [main] INFO  o.s.boot.availability.ApplicationAvailabilityBean - Application availability state LivenessState changed to CORRECT
+2021-05-27 16:15:04.445 [main] INFO  o.s.boot.availability.ApplicationAvailabilityBean - Application availability state ReadinessState changed to ACCEPTING_TRAFFIC

@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.antelope.demo3.dao.ArticleDao">
+  <resultMap id="BaseResultMap" type="com.antelope.demo3.entity.Article">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="title" jdbcType="VARCHAR" property="title" />
+    <result column="customer_id" jdbcType="INTEGER" property="customerId" />
+    <result column="content" jdbcType="VARCHAR" property="content" />
+    <result column="article_tips_id" jdbcType="INTEGER" property="articleTipsId" />
+    <result column="icon" jdbcType="VARCHAR" property="icon" />
+    <result column="type" jdbcType="OTHER" property="type" />
+    <result column="liked" jdbcType="INTEGER" property="liked" />
+    <result column="share" jdbcType="INTEGER" property="share" />
+    <result column="comments" jdbcType="INTEGER" property="comments" />
+    <result column="video_cover" jdbcType="VARCHAR" property="videoCover" />
+    <result column="video" jdbcType="VARCHAR" property="video" />
+    <result column="pics" jdbcType="VARCHAR" property="pics" />
+    <result column="delete" jdbcType="BIT" property="delete" />
+    <result column="created" jdbcType="TIMESTAMP" property="created" />
+    <result column="views" jdbcType="INTEGER" property="views" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, title, customer_id, content, article_tips_id, icon, `type`, liked, `share`, comments, 
+    video_cover, video, pics, `delete`, created, views
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from article
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from article
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" keyColumn="id" keyProperty="id" parameterType="com.antelope.demo3.entity.Article" useGeneratedKeys="true">
+    insert into article (title, customer_id, content, 
+      article_tips_id, icon, `type`, 
+      liked, `share`, comments, 
+      video_cover, video, pics, 
+      `delete`, created, views
+      )
+    values (#{title,jdbcType=VARCHAR}, #{customerId,jdbcType=INTEGER}, #{content,jdbcType=VARCHAR}, 
+      #{articleTipsId,jdbcType=INTEGER}, #{icon,jdbcType=VARCHAR}, #{type,jdbcType=OTHER}, 
+      #{liked,jdbcType=INTEGER}, #{share,jdbcType=INTEGER}, #{comments,jdbcType=INTEGER}, 
+      #{videoCover,jdbcType=VARCHAR}, #{video,jdbcType=VARCHAR}, #{pics,jdbcType=VARCHAR}, 
+      #{delete,jdbcType=BIT}, #{created,jdbcType=TIMESTAMP}, #{views,jdbcType=INTEGER}
+      )
+  </insert>
+  <insert id="insertSelective" keyColumn="id" keyProperty="id" parameterType="com.antelope.demo3.entity.Article" useGeneratedKeys="true">
+    insert into article
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="title != null">
+        title,
+      </if>
+      <if test="customerId != null">
+        customer_id,
+      </if>
+      <if test="content != null">
+        content,
+      </if>
+      <if test="articleTipsId != null">
+        article_tips_id,
+      </if>
+      <if test="icon != null">
+        icon,
+      </if>
+      <if test="type != null">
+        `type`,
+      </if>
+      <if test="liked != null">
+        liked,
+      </if>
+      <if test="share != null">
+        `share`,
+      </if>
+      <if test="comments != null">
+        comments,
+      </if>
+      <if test="videoCover != null">
+        video_cover,
+      </if>
+      <if test="video != null">
+        video,
+      </if>
+      <if test="pics != null">
+        pics,
+      </if>
+      <if test="delete != null">
+        `delete`,
+      </if>
+      <if test="created != null">
+        created,
+      </if>
+      <if test="views != null">
+        views,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="title != null">
+        #{title,jdbcType=VARCHAR},
+      </if>
+      <if test="customerId != null">
+        #{customerId,jdbcType=INTEGER},
+      </if>
+      <if test="content != null">
+        #{content,jdbcType=VARCHAR},
+      </if>
+      <if test="articleTipsId != null">
+        #{articleTipsId,jdbcType=INTEGER},
+      </if>
+      <if test="icon != null">
+        #{icon,jdbcType=VARCHAR},
+      </if>
+      <if test="type != null">
+        #{type,jdbcType=OTHER},
+      </if>
+      <if test="liked != null">
+        #{liked,jdbcType=INTEGER},
+      </if>
+      <if test="share != null">
+        #{share,jdbcType=INTEGER},
+      </if>
+      <if test="comments != null">
+        #{comments,jdbcType=INTEGER},
+      </if>
+      <if test="videoCover != null">
+        #{videoCover,jdbcType=VARCHAR},
+      </if>
+      <if test="video != null">
+        #{video,jdbcType=VARCHAR},
+      </if>
+      <if test="pics != null">
+        #{pics,jdbcType=VARCHAR},
+      </if>
+      <if test="delete != null">
+        #{delete,jdbcType=BIT},
+      </if>
+      <if test="created != null">
+        #{created,jdbcType=TIMESTAMP},
+      </if>
+      <if test="views != null">
+        #{views,jdbcType=INTEGER},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.antelope.demo3.entity.Article">
+    update article
+    <set>
+      <if test="title != null">
+        title = #{title,jdbcType=VARCHAR},
+      </if>
+      <if test="customerId != null">
+        customer_id = #{customerId,jdbcType=INTEGER},
+      </if>
+      <if test="content != null">
+        content = #{content,jdbcType=VARCHAR},
+      </if>
+      <if test="articleTipsId != null">
+        article_tips_id = #{articleTipsId,jdbcType=INTEGER},
+      </if>
+      <if test="icon != null">
+        icon = #{icon,jdbcType=VARCHAR},
+      </if>
+      <if test="type != null">
+        `type` = #{type,jdbcType=OTHER},
+      </if>
+      <if test="liked != null">
+        liked = #{liked,jdbcType=INTEGER},
+      </if>
+      <if test="share != null">
+        `share` = #{share,jdbcType=INTEGER},
+      </if>
+      <if test="comments != null">
+        comments = #{comments,jdbcType=INTEGER},
+      </if>
+      <if test="videoCover != null">
+        video_cover = #{videoCover,jdbcType=VARCHAR},
+      </if>
+      <if test="video != null">
+        video = #{video,jdbcType=VARCHAR},
+      </if>
+      <if test="pics != null">
+        pics = #{pics,jdbcType=VARCHAR},
+      </if>
+      <if test="delete != null">
+        `delete` = #{delete,jdbcType=BIT},
+      </if>
+      <if test="created != null">
+        created = #{created,jdbcType=TIMESTAMP},
+      </if>
+      <if test="views != null">
+        views = #{views,jdbcType=INTEGER},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.antelope.demo3.entity.Article">
+    update article
+    set title = #{title,jdbcType=VARCHAR},
+      customer_id = #{customerId,jdbcType=INTEGER},
+      content = #{content,jdbcType=VARCHAR},
+      article_tips_id = #{articleTipsId,jdbcType=INTEGER},
+      icon = #{icon,jdbcType=VARCHAR},
+      `type` = #{type,jdbcType=OTHER},
+      liked = #{liked,jdbcType=INTEGER},
+      `share` = #{share,jdbcType=INTEGER},
+      comments = #{comments,jdbcType=INTEGER},
+      video_cover = #{videoCover,jdbcType=VARCHAR},
+      video = #{video,jdbcType=VARCHAR},
+      pics = #{pics,jdbcType=VARCHAR},
+      `delete` = #{delete,jdbcType=BIT},
+      created = #{created,jdbcType=TIMESTAMP},
+      views = #{views,jdbcType=INTEGER}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+</mapper>
